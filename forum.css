@@ -1,0 +1,487 @@
+/* Main */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #5e5e5e;
+  --secondary-color: #101111;
+  --tertiary-color: #50f072;
+}
+
+/* Header and Naviagtor */
+
+header {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  background-image: url(../batman.jpg);
+  background-position-y: 10%;
+}
+
+header nav {
+  margin: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: #101111;
+  border-radius: 20px;
+}
+
+header h1 {
+  font-family: monospace;
+  color: white;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 15px 50px;
+  margin: 20px;
+  font-size: 25px;
+  font-family: monospace;
+  position: relative;
+  top: 70px;
+  background-color: white;
+  color: black;
+}
+
+header nav ul li a:hover {
+  background: black;
+  transition: ease-in 0.5s;
+  color: white;
+  text-shadow: none;
+}
+/*End Header*/
+
+/* Header Text Color and Hover */
+.create:hover {
+  color: #50d8f0;
+}
+
+.login:hover {
+  color: #50f072;
+}
+
+.battle:hover {
+  color: #f07050;
+}
+
+.subfroum-title {
+  font-family: monospace;
+}
+/*End Header Color*/
+
+/* Body  */
+
+.matchlink {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(201, 201, 201);
+  margin: 200px 450px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.matchlinktext {
+  text-decoration: none;
+  color: black;
+}
+
+.matchlinktext:hover {
+  transition: ease-in 0.7s;
+  color: rgba(252, 252, 252, 0.918);
+}
+
+.matchlink:hover {
+  transition: ease-in 0.7s;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+/*End Body*/
+
+/* Battle vs Battle Page */
+
+.firsthero {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.938);
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.vs {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.795);
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.secondhero {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.918);
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.matchupnames {
+  margin: 60px 500px;
+}
+/*End Battle Page*/
+
+/* Forum Text Styling */
+html {
+  font-size: 14px;
+  font-family: monospace;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+a {
+  color: var(--tertiary-color);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+/*End Forum Text Styling*/
+
+/*Forum Styling*/
+
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.subforum {
+  margin-top: 20px;
+}
+
+.subforum-title {
+  background-color: rgba(128, 128, 128, 0.144);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.subforum-description {
+  margin-block: 0;
+}
+
+.subforum-row {
+  display: grid;
+  grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column {
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subforum-icon {
+  font-size: 25px;
+}
+/*End Forum*/
+
+/* User Post Styling*/
+
+.table-head {
+  display: flex;
+}
+
+.table-head div {
+  background-color: grey;
+  margin: 2px;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.table-head .status {
+  flex: 10%;
+  text-align: center;
+}
+
+.table-head .subject {
+  flex: 70%;
+  text-align: center;
+}
+
+.table-head .user {
+  flex: 20%;
+  text-align: center;
+}
+
+.table-row {
+  display: flex;
+}
+
+.table-row .status,
+.table-row .subject,
+.table-row .user {
+  padding: 5px;
+  margin: 2px;
+  background-color: rgba(128, 128, 128, 0.322);
+  text-align: center;
+}
+
+.table-row .status {
+  flex: 10%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.table-row .subject {
+  flex: 70%;
+}
+
+.table-row .user {
+  flex: 20%;
+}
+/*End User Post*/
+
+/*User Take*/
+.head {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.568);
+  padding: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.author {
+  flex: 20%;
+}
+
+.content {
+  flex: 80%;
+}
+
+.body {
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.178);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.body .authors .username {
+  font-size: 20px;
+}
+
+.body .content .button .content {
+  border: none;
+  font-weight: bolder;
+  box-shadow: 4px 6px white;
+  cursor: pointer;
+  float: right;
+}
+
+.bttn {
+  padding: 10px;
+}
+
+.btns {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.322);
+  font-weight: bolder;
+}
+
+/*End User Take*/
+
+/*Comment Input*/
+.comment-area {
+  margin-top: 50px;
+}
+
+.comment-area textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin-block: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.comment-area input {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--tertiary-color);
+}
+
+/*End of Comment Input*/
+
+/* Footer */
+
+footer {
+  padding: 40px 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*End Footer*/
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+  header {
+    margin: 50px 20px;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .matchlink {
+    justify-content: center;
+    position: absolute;
+  }
+
+  .subforum-column {
+    background-color: rgba(128, 128, 128, 0.192);
+  }
+
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin: 50px 20px;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .matchlink {
+    justify-content: center;
+    position: absolute;
+  }
+
+  .subforum-column {
+    background-color: rgba(128, 128, 128, 0.192);
+  }
+
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  header {
+    margin: 50px 20px;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .matchlink {
+    justify-content: center;
+    position: absolute;
+  }
+
+  .subforum-column {
+    background-color: rgba(128, 128, 128, 0.192);
+  }
+
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+  }
+
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+}

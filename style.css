@@ -1,0 +1,185 @@
+/* Main Header Staples */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #5e5e5e;
+  --secondary-color: #101111;
+  --tertiary-color: #50f072;
+}
+
+/* Header and Naviagtor */
+
+header {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  background-image: url(../batman.jpg);
+  background-position-y: 10%;
+}
+
+header nav {
+  margin: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: #101111;
+  border-radius: 20px;
+}
+
+header h1 {
+  font-family: monospace;
+  color: white;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 15px 50px;
+  margin: 20px;
+  font-size: 25px;
+  font-family: monospace;
+  position: relative;
+  top: 70px;
+  background-color: white;
+  color: black;
+}
+
+header nav ul li a:hover {
+  background: black;
+  transition: ease-in 0.5s;
+  color: white;
+  text-shadow: none;
+}
+
+/* Text Color */
+.create:hover {
+  color: #50d8f0;
+}
+
+.login:hover {
+  color: #50f072;
+}
+
+.battle:hover {
+  color: #f07050;
+}
+
+/* Body */
+
+body {
+  background-image: url(../batman.jpg);
+  background-position-y: -80px;
+}
+
+.matchlink {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(201, 201, 201);
+  margin: 200px 450px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.matchlinktext {
+  text-decoration: none;
+  color: black;
+}
+
+.matchlinktext:hover {
+  transition: ease-in 0.7s;
+  color: rgba(252, 252, 252, 0.918);
+}
+
+.matchlink:hover {
+  transition: ease-in 0.7s;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+/* Specific Css */
+
+.firsthero {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.938);
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.vs {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.795);
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.secondhero {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.918);
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.matchupnames {
+  margin: 60px 500px;
+}
+
+/* Footer */
+
+footer {
+  padding: 40px 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .matchlink {
+    justify-content: center;
+    position: absolute;
+  }
+}
