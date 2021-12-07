@@ -1,0 +1,42 @@
+ <div class="subforum-description subforum-column">
+    <h1>{{post.character1}} vs {{post.character2}} </h1>
+    <p>description: {{post.post_body}}</p>
+</div>
+
+ <div class="container">
+     {{#each post.comments}}
+       <div class="topic-container">
+           <div class="head">
+            <div class="author">User</div>
+            <div class="content">Content</div>
+         </div>
+   
+         <div class="body">
+           <div class="author">
+                <div class="username"><a href="#">{{user.username}}</a></div>
+                <div>Role</div>
+                <div>Score: <u>{{post.vote_count}}</u></div>
+           </div>
+   
+           <div class="content">
+              {{comment_text}}
+           </div>
+   
+           <div class="bttn">
+               <button class="btns upvote-btn">Like</button>
+           </div>
+         </div>{{/each}}
+       </div>
+       
+        {{#if loggedIn}}
+       <form class="comment-area">
+           <textarea name="comment" id="comment-body" placeholder="add your comment here"></textarea>
+           <input type="submit" value="SUBMIT">
+       </div>
+        {{/if}}
+        
+    </div>
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/character-vote.js"></script>
+{{/if}}

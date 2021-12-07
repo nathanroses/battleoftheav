@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  background-image: url(/batman.jpg);
+  background-image: url(/public/images/batman.jpg);
   background-position-y: 10%;
 }
 
@@ -81,7 +81,7 @@ header nav ul li a:hover {
 /* Body */
 
 body {
-  background-image: url(/batman.jpg);
+  background-image: url(/public/images/batman.jpg);
   background-position-y: -80px;
 }
 

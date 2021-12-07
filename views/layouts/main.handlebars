@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Verse</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <link rel="stylesheet" href="/public/stylesheets/forum.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+ </head>
+  
+ <header>
+     <a class="rosepx" href="/">
+      <img width="220" height="200" src="/images/tras.png">
+     </a>
+     <nav>
+         <ul>
+           {{#if loggedIn}}
+            <li>
+                <a href="/create">Create a Matchup</a>
+              </li>
+              {{/if}}
+             <li>
+               <a href="/battle.html">Battle vs Battle</a>
+             </li>
+             {{#if loggedIn}}
+             <li>
+             <button id="logout">logout</button>
+              </li>
+              {{else}}
+              <li>
+                <a href="/login">Login</a>
+              </li>
+              {{/if}}
+             <li>
+                <a href="/">Back to Home</a>
+              </li>
+         </ul>
+     </nav>
+ </header>
+ 
+<body>
+{{{body}}}
+</body>
+
+<script src="https://kit.fontawesome.com/f8caad2663.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/f8caad2663.js" crossorigin="anonymous"></script>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+</html>
+
+
+</html>

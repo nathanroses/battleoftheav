@@ -1,0 +1,30 @@
+
+<link rel="stylesheet" href="/stylesheets/forum.css">
+
+<div class="container">
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>Battle of the Century</h1>
+            </div>
+        <!--Start of Forum-->    
+        {{#each posts}}
+            <div class="subforum-row">
+                <div class="subforum-icon subforum-column">
+                    <i class="fas fa-brain"></i>
+                </div>
+                 <div class="subforum-description subforum-column">
+                     <h1><a href="/post/{{id}}">{{character1}} vs {{character2}}</a> </h1>
+                     <p>description: {{post_body}}</p>
+                 </div>
+                 <div class="subforum-status subforum-column center">
+                     <span>{{vote_count}} Likes | {{comments.length}} Responses</span>
+                 </div>
+                 <div class="subforum-info subforum-column">
+                  <b><a href="">Last Response</a></b> was by <a href="">future feature</a>
+                   <br>
+                   on <small>Nov 28 2021</small> 
+                 </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
