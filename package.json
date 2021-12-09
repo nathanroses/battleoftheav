@@ -20,13 +20,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Okojie615/2dverse.git"
+    "url": "git+https://github.com/nathanroses/battleoftheav"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Okojie615/2dverse/issues"
+    "url": "https://github.com/nathanroses/battleoftheav"
   },
-  "homepage": "https://github.com/Okojie615/2dverse#readme"
+  "homepage": "https://github.com/nathanroses/battleoftheav#readme"
 }
