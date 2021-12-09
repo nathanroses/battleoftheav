@@ -1,5 +1,5 @@
 {
-  "name": "project2repo",
+  "name": "battleofthehv",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -15,7 +15,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
